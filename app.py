@@ -534,17 +534,17 @@ if st.button("🔍  Predict Diabetes"):
         st.markdown(f"""
         <div class="result-card">
 
-            <div class="result-title">
+            
                 ⚠️ Higher Likelihood of Diabetes
-            </div>
+           
 
-            <div class="probability">
+            
                 {diabetes_probability:.2f}%
             </div>
 
-            <div class="result-description">
+           
                 Estimated diabetes probability according to the ML model
-            </div>
+            
 
         </div>
         """, unsafe_allow_html=True)
@@ -554,17 +554,17 @@ if st.button("🔍  Predict Diabetes"):
         st.markdown(f"""
         <div class="result-card">
 
-            <div class="result-title">
+            
                 ✅ Lower Likelihood of Diabetes
-            </div>
+            
 
-            <div class="probability">
+            
                 {diabetes_probability:.2f}%
-            </div>
+           
 
-            <div class="result-description">
+           
                 Estimated diabetes probability according to the ML model
-            </div>
+            
 
         </div>
         """, unsafe_allow_html=True)
@@ -592,13 +592,13 @@ if st.button("🔍  Predict Diabetes"):
         st.markdown(f"""
         <div class="info-box">
 
-            <div class="info-number">
+            
                 {diabetes_probability:.2f}%
-            </div>
+            
 
-            <div class="info-label">
+            
                 Diabetes Probability
-            </div>
+           
 
         </div>
         """, unsafe_allow_html=True)
@@ -609,13 +609,11 @@ if st.button("🔍  Predict Diabetes"):
         st.markdown(f"""
         <div class="info-box">
 
-            <div class="info-number">
+           
                 {100 - diabetes_probability:.2f}%
-            </div>
-
-            <div class="info-label">
+         
                 No Diabetes Probability
-            </div>
+            
 
         </div>
         """, unsafe_allow_html=True)
